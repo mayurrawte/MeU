@@ -1,0 +1,30 @@
+<div *ngIf="dataLoaded" class="bg-original-map">
+  <agm-map [latitude]="dataProvider.currentLocation.latitude" [longitude]="dataProvider.currentLocation.longitude" [zoom]="defaultZoom" [styles]="mapStyle">
+    <agm-marker [latitude]="dataProvider.currentLocation.latitude" [longitude]="dataProvider.currentLocation.longitude"></agm-marker>
+  </agm-map>
+</div>
+<div class="overlay-map-content">
+  <div class="car-option-overlay">
+    <ion-slides>
+      <ion-slide>
+        <div class="car-option">
+          <p>Random car</p>
+          <p>Price</p>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <div class="car-option">
+          <p>Random car</p>
+          <p>Price</p>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <div class="car-option">
+          <p>Random car</p>
+          <p>Price</p>
+        </div>
+      </ion-slide>
+    </ion-slides>
+  </div>
+</div>
+

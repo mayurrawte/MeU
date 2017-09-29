@@ -1,0 +1,70 @@
+page-welcome {
+  background: url("../../assets/images/street.jpg") center center no-repeat;
+  background-size: cover;
+  .welcome-underlay {
+    background-color: palevioletred;
+  }
+  .welcome-logo {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: rgba(21, 21, 21, 0.57);
+    text-align: center;
+    padding: 25px;
+    color: #fff;
+    border-radius: 5px;
+    .logo-text {
+      font-size: 40px;
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      margin: auto;
+      height: 80px;
+      h2 {
+        font-family: 'Wendy One';
+        font-size: 50px;
+        margin-bottom: 0px;
+      }
+      p {
+        font-size: 14px;
+        font-family: 'Wendy One';
+        margin-top: 0px;
+      }
+    }
+  }
+  .bottom-buttons {
+    position: fixed;
+    bottom: 37px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    button {
+      width: 49%;
+      padding: 10px;
+      margin: 0px;
+      color: #d0d0d0;
+      text-transform: uppercase;
+      background: none;
+      border: 1px solid #7b7b7b;
+      font-weight: bold;
+      font-size: 12px;
+    }
+  }
+  .skip-btn {
+    width: 100%;
+    background: #232829;
+    color: #ffffff;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 12px;
+    font-size: 8px;
+  }
+
+}

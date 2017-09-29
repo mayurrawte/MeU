@@ -1,0 +1,25 @@
+page-home {
+  agm-map {
+    height: 100vh;
+  }
+  .overlay-map-content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+  }
+  .car-option-overlay {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #f4f4f4;
+    ion-slide {
+      width: 50% !important;
+      background: white;
+      margin: 0px 15px;
+      border-radius: 5px;
+    }
+  }
+}
