@@ -8,18 +8,41 @@ page-home {
     left: 0;
     background: white;
   }
-  .car-option-overlay {
+  .overlay-map-tabnav {
     position: fixed;
     bottom: 0;
+    left:0;
+    height: 200px;
+    background: linear-gradient(70deg, #17EAD9, #6078EA);
+  }
+  .car-option-overlay {
+    position: fixed;
+    bottom: 50px;
     left: 0;
     right: 0;
     margin: auto;
-    background: #f4f4f4;
     ion-slide {
       width: 50% !important;
       background: white;
       margin: 0px 15px;
       border-radius: 5px;
+      padding: 15px 25px;
+      .car-model {
+        font-size: 14px;
+        margin: -5px;
+      }
+      .car-rate {
+        font-size: 10px;
+      }
+      .car-book-btn {
+        padding: 10px 35px;
+        border-radius: 5px;
+        background: linear-gradient(70deg, #17EAD9, #6078EA);
+        color: #fff;
+      }
     }
+  }
+  .toolbar-background-md {
+    background: linear-gradient(70deg, #22d9dc, #5d7ce9);
   }
 }

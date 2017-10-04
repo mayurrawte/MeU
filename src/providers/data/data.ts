@@ -13,10 +13,10 @@ import 'rxjs/add/operator/map';
 export class DataProvider {
 
   availableCars = [
-    {'id': '45sdf4', 'model': 'BMW', 'rate': '100', 'thumb': ''},
-    {'id': 'fsdsd2', 'model': 'TATA SUMO', 'rate': '100', 'thumb': ''},
-    {'id': '342sd', 'model': 'BMW', 'rate': '100', 'thumb': ''},
-    {'id': '34dsf', 'model': 'BMW', 'rate': '100', 'thumb': ''},
+    {'id': '45sdf4', 'model': 'BMW Mini', 'rate': '100', 'thumb': 'assets/images/car-1.png'},
+    {'id': 'fsdsd2', 'model': 'TATA SUMO', 'rate': '100', 'thumb': 'assets/images/car-2.png'},
+    {'id': '342sd', 'model': 'Suzuki', 'rate': '100', 'thumb': 'assets/images/car-3.png'},
+    {'id': '34dsf', 'model': 'F1', 'rate': '100', 'thumb': 'assets/images/car-4.png'},
   ];
   currentLocation:any = [];
   constructor(public http: Http, public geoLocation: Geolocation) {
@@ -34,6 +34,9 @@ export class DataProvider {
         console.log(res);
       });
     });
+  }
+  getAvailableCars() {
+    return this.availableCars;
   }
 
 }

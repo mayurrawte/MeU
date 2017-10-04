@@ -1,30 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      MoU Cabs
+    </ion-title>
+  </ion-navbar>
+</ion-header>
 <div *ngIf="dataLoaded" class="bg-original-map">
   <agm-map [latitude]="dataProvider.currentLocation.latitude" [longitude]="dataProvider.currentLocation.longitude" [zoom]="defaultZoom" [styles]="mapStyle">
-    <agm-marker [latitude]="dataProvider.currentLocation.latitude" [longitude]="dataProvider.currentLocation.longitude"></agm-marker>
+    <agm-marker [latitude]="dataProvider.currentLocation.latitude" [longitude]="dataProvider.currentLocation.longitude" [iconUrl]="'assets/images/grad-dot.png'"></agm-marker>
   </agm-map>
 </div>
 <div class="overlay-map-content">
   <div class="car-option-overlay">
     <ion-slides>
-      <ion-slide>
+      <ion-slide *ngFor="let car of availableCars">
         <div class="car-option">
-          <p>Random car</p>
-          <p>Price</p>
-        </div>
-      </ion-slide>
-      <ion-slide>
-        <div class="car-option">
-          <p>Random car</p>
-          <p>Price</p>
-        </div>
-      </ion-slide>
-      <ion-slide>
-        <div class="car-option">
-          <p>Random car</p>
-          <p>Price</p>
+          <img [src]="car.thumb" class="img-responsive">
+          <p class="car-model">{{car.model}}</p>
+          <p class="car-rate">{{car.rate}} / km</p>
+          <button class="car-book-btn">Book</button>
         </div>
       </ion-slide>
     </ion-slides>
   </div>
 </div>
-
