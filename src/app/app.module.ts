@@ -9,11 +9,11 @@ import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import {WelcomePage} from "../pages/welcome/welcome";
 import {AgmCoreModule} from "@agm/core";
 import {Geolocation} from "@ionic-native/geolocation";
 import { DataProvider } from '../providers/data/data';
 import {HttpModule} from "@angular/http";
+import {WelcomePageModule} from "../pages/welcome/welcome.module";
 
 @NgModule({
   declarations: [
@@ -21,10 +21,10 @@ import {HttpModule} from "@angular/http";
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage,
-    WelcomePage
+    TabsPage
   ],
   imports: [
+    WelcomePageModule,
     BrowserModule,
     IonicModule.forRoot(MyApp),
     AgmCoreModule.forRoot({
@@ -40,7 +40,6 @@ import {HttpModule} from "@angular/http";
     ContactPage,
     HomePage,
     TabsPage,
-    WelcomePage
   ],
   providers: [
     StatusBar,
